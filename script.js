@@ -1,18 +1,27 @@
-let score = 79.4;
-let grade;
-if(score > 80){
-    grade = 'A';
+let money = 999999;
+let tax;
+if(money < 150000){
+    tax = 0;
 }
-else if(score >= 75){
-    grade = 'B';
+else if(money <= 300000){
+    tax = (money - 150000) * 0.05;
 }
-else if(score >= 70){
-    grade = 'C';
+else if(money <= 500000){
+    tax = (money - 300000) * 0.1 + 7500;
 }
-else if(score >= 65){
-    grade = 'D';
+else if(money <= 750000){
+    tax = (money - 500000) * 0.15 + 27500;
 }
-else if(score >= 60){
-    grade = 'f';
+else if(money <= 1000000){
+    tax = (money - 750000) * 0.20 + 65000;
 }
-console.log(grade +' '+ score);
+else if(money <= 2000000){
+    tax = (money - 1000000) * 0.25 + 115000;
+}
+else if(money <= 5000000){
+    tax = (money - 2000000) * 0.30 + 365000;
+}
+else if(money >= 5000001){
+    tax = (money - 5000000) * 0.35 + 1265000;
+}
+console.log(tax);
