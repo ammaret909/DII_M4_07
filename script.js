@@ -1,27 +1,16 @@
-let money = 999999;
-let tax;
-if(money < 150000){
-    tax = 0;
+let n = 3;
+let count_f=1;
+for(let i = 1 ; i <= n ; i++){
+    count_f = count_f * i
 }
-else if(money <= 300000){
-    tax = (money - 150000) * 0.05;
+console.log(count_f)
+
+n = 3;
+let count_w = 1;
+while(n>0){
+    count_w *= n;
+    n--;
 }
-else if(money <= 500000){
-    tax = (money - 300000) * 0.1 + 7500;
-}
-else if(money <= 750000){
-    tax = (money - 500000) * 0.15 + 27500;
-}
-else if(money <= 1000000){
-    tax = (money - 750000) * 0.20 + 65000;
-}
-else if(money <= 2000000){
-    tax = (money - 1000000) * 0.25 + 115000;
-}
-else if(money <= 5000000){
-    tax = (money - 2000000) * 0.30 + 365000;
-}
-else if(money >= 5000001){
-    tax = (money - 5000000) * 0.35 + 1265000;
-}
-console.log(tax);
+console.log(count_w)
+
+console.log(count_w === count_f);
