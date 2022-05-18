@@ -35,5 +35,39 @@ for(let i=0 ; i<5 ; i++){
 }
 age = age / employee.length;
 
+let money = 0;
+let taxSum = 0;
+for(let i=0 ; i<5 ; i++){
+    money = 12 * employee[i].salary
 
-console.log('sum salary is :'+sum+' sum age :'+age);
+    let tax;
+if(money < 150000){
+    tax = 0;
+}
+else if(money <= 300000){
+    tax = (money - 150000) * 0.05;
+}
+else if(money <= 500000){
+    tax = (money - 300000) * 0.1 + 7500;
+}
+else if(money <= 750000){
+    tax = (money - 500000) * 0.15 + 27500;
+}
+else if(money <= 1000000){
+    tax = (money - 750000) * 0.20 + 65000;
+}
+else if(money <= 2000000){
+    tax = (money - 1000000) * 0.25 + 115000;
+}
+else if(money <= 5000000){
+    tax = (money - 2000000) * 0.30 + 365000;
+}
+else if(money >= 5000001){
+    tax = (money - 5000000) * 0.35 + 1265000;
+}
+taxSum = taxSum +tax
+}
+let ats = 0;
+ats = taxSum / 5
+
+console.log('sum salary is :'+sum+' sum age :'+age+' sum tax is :'+ats);
