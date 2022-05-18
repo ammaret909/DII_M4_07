@@ -1,4 +1,11 @@
-const newText = 'not ok';
-document.getElementById('ok').innerHTML = newText;
-const nt = 'ok';
-document.getElementById('cancel').innerHTML = nt;
+function alert1() {
+    alert('let me see ...');
+}
+let ok = document.getElementById('ok');
+ok.addEventListener('click', alert1); 
+
+function alert2() {
+    alert('not ok');
+}
+let notOk = document.getElementById('cancel');
+notOk.addEventListener('click', alert2);
