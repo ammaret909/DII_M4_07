@@ -71,3 +71,4 @@ let ats = 0;
 ats = taxSum / 5
 
 console.log('sum salary is :'+sum+' sum age :'+age+' sum tax is :'+ats);
+
