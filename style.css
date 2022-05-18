@@ -22,3 +22,9 @@
     color: black;
     border: 2px solid red;
 }
+
+#hi {
+    background-color: rgb(249, 204, 187);
+    color: black;
+    border: 2px solid rgb(249, 198, 198);
+}
